@@ -14,6 +14,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Arimo:wght@600;700&family=Familjen+Grotesk:wght@600;700&family=Inter:wght@400;600&family=Libre+Baskerville:wght@700&family=Syne:wght@600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
   <!-- End google font  -->
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -131,13 +134,12 @@
                   <img src="assets/images/v1/star2.png" alt="">
                 </span>
               </span>
-              Mr. Andrew Mark
+              <h2 id="team-member-name">Demo Name</h2>
             </h2>
-            <p>Andrew Mark is the CEO of our design agency. He plays a key role in overseeing the agency's operations,
+            <p id='team-member-bio'>Andrew Mark is the CEO of our design agency. He plays a key role in overseeing the
+              agency's operations,
               growth and strategic direction.</p>
-            <p>As the leader of the organization, he also sets the company's vision, mission, and values. He spent 15
-              years providing strategic direction and ensuring the organization's goals and objectives were met.</p>
-            <div class="aximo-social-icon aximo-btn-wrap">
+            <!-- <div class="aximo-social-icon aximo-btn-wrap">
               <ul>
                 <li>
                   <a href="">
@@ -160,7 +162,7 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -171,7 +173,7 @@
   <div class="section aximo-section-padding3 pt-0">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
           <div class="aximo-team-setails">
             <h3>Qualifications:</h3>
             <ul>
@@ -182,23 +184,30 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="col-lg-4">
+        </div> -->
+        <div class="col-lg-6">
           <div class="aximo-team-setails">
             <h3>Attributes:</h3>
             <ul>
-              <li><span>Visionary:</span> A successful CEO in a design agency should have a clear vision.</li>
-              <li><span>Strong Communication Skills: </span> A effective communication is essential for interaction.
+              <li id="attr-content-1"><span>Visionary:</span> A successful CEO in a design agency
+                should
+                have a clear vision.
               </li>
-              <li><span>Business Acumen:</span> A strong understanding of business principles, finance, and marketing.
+              <li id="attr-content-2"><span>Strong Communication Skills: </span> A effective communication is essential
+                for
+                interaction.
+              </li>
+              <li id="attr-content-3"><span>Business Acumen:</span> A strong understanding of business
+                principles, finance, and
+                marketing.
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div class="aximo-team-setails">
             <h3>Professional Skills:</h3>
-            <div class="aximo-skillbar-wrapper">
+            <div id='skillbarWrapper' class="aximo-skillbar-wrapper">
               <div class="aximo-skillbar" data-percent="95">
                 <p class="aximo-skillbar-lable">
                   <span class="aximo-skill-bar-title">Problem-Solving Skills:</span>
@@ -253,42 +262,42 @@
                 </span>
                 project together
               </h2>
-              <p>We work closely with our clients to understand their objectives, target audience, and unique needs. We
-                use our creative skills to translate these requirements and practical design solutions.</p>
+              <p>Data whisperers & design ninjas combined. We unlock your brand's story & build experiences that
+                captivate. #TechBucket</p>
               <div class="aximo-info-wrap">
                 <div class="aximo-info">
                   <ul>
                     <li>Give us a call:</li>
-                    <li><a href="">(123) 456-7890</a></li>
+                    <li><a href="">289-221-0474</a></li>
                   </ul>
                 </div>
                 <div class="aximo-info">
                   <ul>
                     <li>Send us an email:</li>
-                    <li><a href="">info@mthemeus.com</a></li>
+                    <li><a href="">info@techbucket.ca</a></li>
                   </ul>
                 </div>
               </div>
               <div class="aximo-social-icon social-large">
                 <ul>
                   <li>
-                    <a href="https://twitter.com/" target="_blank">
-                      <i class="icon-twitter"></i>
+                    <a href="mailto:info@techbucket.ca" target="_blank">
+                      <i class="fa-solid fa-envelope"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://facebook.com/" target="_blank">
-                      <i class="icon-facebook"></i>
+                    <a href="https://facebook.com/page/techbucket" target="_blank">
+                      <i class="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="icon-instagram"></i>
+                    <a href="https://www.instagram.com/techbucket.ca" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <i class="icon-linkedin"></i>
+                    <a href="https://www.tiktok.com/techbucket" target="_blank">
+                      <i class="fa-brands fa-tiktok"></i>
                     </a>
                   </li>
                 </ul>
@@ -301,18 +310,19 @@
           <div class="col-lg-5">
             <div class="aximo-form-wrap">
               <h4>Send us a message</h4>
-              <form action="#">
+              <form onSubmit="return validateAndSubmitForm(event)">
                 <div class="aximo-form-field">
-                  <input type="text" placeholder="Your name">
+                  <input value='' id='name' type="text" placeholder="Your name">
                 </div>
                 <div class="aximo-form-field">
-                  <input type="email" placeholder="Your email address">
+                  <input value='' id='email' type="email" placeholder="Your email address">
                 </div>
                 <div class="aximo-form-field">
-                  <input type="text" placeholder="+088-234-6849">
+                  <input value='' id="phone" type="text" placeholder="+088-234-6849">
+                  <input type='hidden' value='General Contact Purpose' id="category" type="text" placeholder="">
                 </div>
                 <div class="aximo-form-field">
-                  <textarea name="textarea" placeholder="Write your message here..."></textarea>
+                  <textarea value='' id='message' name="textarea" placeholder="Write your message here..."></textarea>
                 </div>
                 <button id="aximo-submit-btn" type="submit">Send message <span><img
                       src="assets/images/icon/arrow-right3.svg" alt=""></span></button>
@@ -332,7 +342,7 @@
           </div>
           <div class="col-lg-6">
             <div class="aximo-copywright one">
-              <p> &copy; Copyright 2023, All Rights Reserved by Mthemeus</p>
+              <p> &copy; Copyright 2024, All Rights Reserved | Tech Bucket</p>
             </div>
           </div>
         </div>
@@ -364,8 +374,19 @@
   <!-- <script src="assets/js/scrollsmooth.js"></script> -->
   <script src="assets/js/faq.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
+  <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/teammember.js"></script>
+
+  <script>
+    new kursor({
+      type: 4
+    })
+  </script>
 
 
 </body>

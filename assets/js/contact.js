@@ -4,7 +4,7 @@ const ShowMsg = (message) => {
 		duration: 3000,
 		close: true,
 		gravity: 'bottom', // `top` or `bottom`
-		position: 'center', // `left`, `center` or `right`
+		position: 'left', // `left`, `center` or `right`
 		stopOnFocus: false,
 		style: {
 			background: 'white',
@@ -19,7 +19,7 @@ const ShowSuccess = (message) => {
 		duration: 3000,
 		close: true,
 		gravity: 'bottom', // `top` or `bottom`
-		position: 'center', // `left`, `center` or `right`
+		position: 'left', // `left`, `center` or `right`
 		stopOnFocus: false,
 		style: {
 			background: '#bff747',
@@ -34,7 +34,7 @@ const ShowError = (message) => {
 		duration: 3000,
 		close: true,
 		gravity: 'bottom', // `top` or `bottom`
-		position: 'center', // `left`, `center` or `right`
+		position: 'left', // `left`, `center` or `right`
 		stopOnFocus: false,
 		style: {
 			background: '#ff8080',
@@ -118,7 +118,7 @@ function validateAndSubmitForm(event) {
 
 	const options = {
 		method: 'POST',
-		url: 'http://localhost:4000/',
+		url: 'https://tech-bucket-mail-api.vercel.app/',
 		headers: {
 			'Content-Type': 'application/json',
 		},
@@ -135,5 +135,8 @@ function validateAndSubmitForm(event) {
 				document.getElementById('message').value = '';
 			}
 		})
-		.catch(function (error) {});
+		.catch(function (error) {
+			console.log(error);
+			ShowError('Failed to send message');
+		});
 }
