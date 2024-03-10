@@ -7,12 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Bucket | Creative Media Agency</title>
 
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <!-- <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <!--- End favicon-->
 
   <link
     href="https://fonts.googleapis.com/css2?family=Arimo:wght@600;700&family=Familjen+Grotesk:wght@600;700&family=Inter:wght@400;600&family=Libre+Baskerville:wght@700&family=Syne:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <!-- End google font  -->
@@ -38,6 +48,16 @@
   <!-- Custom Cursor -->
   <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 
+  <style>
+    .footerImage {
+      width: 25%;
+
+      @media (min-width: 200px) and (max-width: 767px) {
+        width: 50%;
+      }
+
+    }
+  </style>
 </head>
 
 <body class="light">
@@ -51,8 +71,52 @@
     </div>
   </div>
 
-
-
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Announcement!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left" style="padding-bottom: 0;">
+          <p style="font-size: 1.2rem; font-weight: 400; font-family: Poppins">Checkout the Latest News and Social Media
+            Campaigns by
+            TechBucket!</p>
+        </div>
+        <div class="modal-body">
+          <div class="aximo-social-icon social-large d-flex">
+            <ul>
+              <li>
+                <a href="mailto:info@techbucket.ca" target="_blank">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/techbucket.ca/" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/techbucket.ca" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@techbucket.ca" target="_blank">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer" style="margin: 0 .5rem 0 0">
+          <button class="close" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <header class="site-header aximo-header-section aximo-header1 dark-bg" id="sticky-menu">
     <div class="container">
@@ -60,7 +124,7 @@
         <!-- Brand Logo-->
         <div class="brand-logo">
           <a href="index.html">
-            <img src="assets/images/logo/logo-white.svg" alt="" class="light-version-logo">
+            <img src="assets/logo_tb.png" alt="" class="light-version-logo">
           </a>
         </div>
         <div class="menu-block-wrapper">
@@ -78,16 +142,16 @@
                 <a href="/index.html" class="nav-link-item">Home</a>
               </li>
               <li class="nav-item">
-                <a href="portfolio.html" target="_blank" class="nav-link-item">Portfolio</a>
+                <a href="portfolio.html" class="nav-link-item">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a href="/team.html" target="_blank" class="nav-link-item">Our Team</a>
+                <a href="/about-us.html" class="nav-link-item">About Us</a>
               </li>
               <li class="nav-item">
-                <a href="/service.html" target="_blank" class="nav-link-item">Services</a>
+                <a href="/service.html" class="nav-link-item">Services</a>
               </li>
               <li class="nav-item">
-                <a href="/contact-us.html" target="_blank" class="nav-link-item">Contact Us</a>
+                <a href="/contact-us.html" class="nav-link-item">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -185,7 +249,7 @@
                   <li>Amazon Ads</li>
                 </ul>
                 </p>
-                <a class="aximo-icon" href="contact.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+                <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -205,7 +269,7 @@
                   <li>Influencer Marketing</li>
                 </ul>
                 </p>
-                <a class="aximo-icon" href="contact.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+                <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -225,7 +289,7 @@
                   <li>Google Tag Manager</li>
                 </ul>
                 </p>
-                <a class="aximo-icon" href="contact.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+                <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -245,7 +309,7 @@
                   <li>Prototyping & User Testing</li>
                 </ul>
                 </p>
-                <a class="aximo-icon" href="contact.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+                <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -292,8 +356,8 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="aximo-video-wrap wow fadeInUpX" data-wow-delay="0s">
-            <img src="assets/images/v1/video-bg.png" alt="">
-            <a class="aximo-video-popup play-btn1 video-init" href="https://www.youtube.com/watch?v=Vx2aLNgGoAE">
+            <img src="./assets/images/Projects/home_thumbnail.png" alt="">
+            <a class="aximo-video-popup play-btn1 video-init" href="./assets/Video/lucky soup1.mp4">
               <img src="assets/images/v1/play-btn.svg" alt="">
             </a>
           </div>
@@ -660,8 +724,8 @@
         </h2>
       </div>
       <div class="row">
-        <div class="col-lg-4">
-          <div class="aximo-testimonial-wrap wow fadeInUpX" data-wow-delay="0.1s">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="aximo-testimonial-wrap wow fadeInUpX flex-column d-flex" data-wow-delay="0.1s">
             <div class="aximo-testimonial-rating">
               <div
                 style="background-color: #ff6969; width: fit-content; color: white; border-radius: 2rem; padding: .25rem 1rem; font-size: .85rem; margin-bottom: 1rem;">
@@ -669,12 +733,12 @@
               <h4>Todays Deal
               </h4>
             </div>
-            <div class="aximo-testimonial-data">
+            <div class="aximo-testimonial-data flex-grow-1">
               <p>TechBucket Is Hiring, Mail us your resume & get started!</p>
             </div>
             <div class="aximo-testimonial-author">
               <div class="aximo-testimonial-author-data">
-                <a style='all:unset;' href="/index.html"
+                <a style='all:unset;' href="mailto:info@techbucket.ca"
                   class="d-flex align-items-center justify-content-center rounded-3">
                   <i class="fa-regular fa-link"></i>
                 </a>
@@ -682,43 +746,42 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="aximo-testimonial-wrap wow fadeInUpX" data-wow-delay="0.1s">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="aximo-testimonial-wrap wow fadeInUpX flex-column d-flex" data-wow-delay="0.1s">
             <div class="aximo-testimonial-rating">
               <div
                 style="background-color: #ff6969; width: fit-content; color: white; border-radius: 2rem; padding: .25rem 1rem; font-size: .85rem; margin-bottom: 1rem;">
                 HOT</div>
-              <h4>Todays Deal
+              <h4>Latest News
               </h4>
             </div>
-            <div class="aximo-testimonial-data">
-              <p>TechBucket Is Hiring, Mail us your resume & get started!</p>
+            <div class="aximo-testimonial-data flex-grow-1">
+              <p>TechBucket has Re-branded Itself, Have a Look!</p>
             </div>
             <div class="aximo-testimonial-author">
               <div class="aximo-testimonial-author-data">
-                <a style='all:unset;' href="/index.html"
-                  class="d-flex align-items-center justify-content-center rounded-3">
+                <!-- <a style='all:unset;' href="#" class="d-flex align-items-center justify-content-center rounded-3">
                   <i class="fa-regular fa-link"></i>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="aximo-testimonial-wrap wow fadeInUpX" data-wow-delay="0.1s">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="aximo-testimonial-wrap wow fadeInUpX flex-column d-flex" data-wow-delay="0.1s">
             <div class="aximo-testimonial-rating">
               <div
-                style="background-color: #ff6969; width: fit-content; color: white; border-radius: 2rem; padding: .25rem 1rem; font-size: .85rem; margin-bottom: 1rem;">
-                HOT</div>
-              <h4>Todays Deal
+                style="background-color: #69ff85; width: fit-content; color: black; border-radius: 2rem; padding: .25rem 1rem; font-size: .85rem; margin-bottom: 1rem;">
+                New</div>
+              <h4>Must Read
               </h4>
             </div>
-            <div class="aximo-testimonial-data">
-              <p>TechBucket Is Hiring, Mail us your resume & get started!</p>
+            <div class="aximo-testimonial-data flex-grow-1">
+              <p>Follow our Social Media Accounts for new deals!</p>
             </div>
             <div class="aximo-testimonial-author">
               <div class="aximo-testimonial-author-data">
-                <a style='all:unset;' href="/index.html"
+                <a style='all:unset;' href="https://www.instagram.com/techbucket.ca/"
                   class="d-flex align-items-center justify-content-center rounded-3">
                   <i class="fa-regular fa-link"></i>
                 </a>
@@ -961,7 +1024,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="https://facebook.com/page/techbucket" target="_blank">
+                    <a href="https://www.facebook.com/techbucket.ca/" target="_blank">
                       <i class="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
@@ -971,7 +1034,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.tiktok.com/techbucket" target="_blank">
+                    <a href="https://www.tiktok.com/@techbucket.ca" target="_blank">
                       <i class="fa-brands fa-tiktok"></i>
                     </a>
                   </li>
@@ -1011,20 +1074,20 @@
           <div class="col-lg-6">
             <div class="aximo-footer-logo">
               <a href="">
-                <img src="assets/images/logo/logo-white.svg" alt="">
+                <img class="footerImage" src="assets/logo_tb.png"" alt="">
               </a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="aximo-copywright one">
-              <p> &copy; Copyright 2024, All Rights Reserved | Tech Bucket</p>
+          <div class=" col-lg-6">
+                <div class="aximo-copywright one">
+                  <p> &copy; Copyright 2024, All Rights Reserved | Tech Bucket</p>
+                </div>
             </div>
           </div>
+
         </div>
 
       </div>
-
-    </div>
   </footer>
 
 
@@ -1033,7 +1096,6 @@
 
   <!-- scripts -->
   <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/menu/menu.js"></script>
   <script src="assets/js/gsap.min.js"></script>
@@ -1046,6 +1108,7 @@
   <script src="assets/js/ScrollTrigger.min.js"></script>
   <script src="assets/js/ScrollSmoother.min.js"></script>
   <script src="assets/js/skill-bar.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="assets/js/scrollsmooth.js"></script> -->
   <script src="assets/js/faq.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
@@ -1060,6 +1123,34 @@
     new kursor({
       type: 4
     })
+
+    setTimeout(() => {
+      $(document).ready(function () {
+        // Check if the 'modalShown' cookie is not set
+        if (document.cookie.split(';').some((item) => item.trim().startsWith('modalShown='))) {
+          // The 'modalShown' cookie is set, so don't show the modal
+          return;
+        }
+
+        // Show the modal
+        $('#myModal').modal('show');
+
+        // Set the 'modalShown' cookie to 'true'
+        var date = new Date();
+        date.setTime(date.getTime() + (24 * 60 * 60 * 1000)); // Cookie will expire in 24 hours
+        var expires = "; expires=" + date.toGMTString();
+        document.cookie = "modalShown=true" + expires + "; path=/";
+      });
+    }, 1000);
+
+    $('.close').on('click', function () {
+      $('#myModal').modal('hide');
+    });
+
+    $('.close').on('click', function () {
+      $('#myModal').modal('hide');
+    });
+
   </script>
   <script>
     const ShowMsg = (message) => {

@@ -7,8 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Bucket | Creative Media Agency</title>
 
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <!--- End favicon-->
 
   <link
@@ -32,6 +37,16 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/app.min.css">
+  <style>
+    .footerImage {
+      width: 25%;
+
+      @media (min-width: 200px) and (max-width: 767px) {
+        width: 50%;
+      }
+
+    }
+  </style>
 </head>
 
 <body class="light">
@@ -54,7 +69,7 @@
         <!-- Brand Logo-->
         <div class="brand-logo">
           <a href="index.html">
-            <img src="assets/images/logo/logo-white.svg" alt="" class="light-version-logo">
+            <img src="assets/logo_tb.png" alt="" class="light-version-logo">
           </a>
         </div>
         <div class="menu-block-wrapper">
@@ -72,16 +87,16 @@
                 <a href="/index.html" class="nav-link-item">Home</a>
               </li>
               <li class="nav-item">
-                <a href="portfolio.html" target="_blank" class="nav-link-item">Portfolio</a>
+                <a href="portfolio.html" class="nav-link-item">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a href="/team.html" target="_blank" class="nav-link-item">Our Team</a>
+                <a href="/about-us.html" class="nav-link-item">About Us</a>
               </li>
               <li class="nav-item">
-                <a href="/service.html" target="_blank" class="nav-link-item">Services</a>
+                <a href="/service.html" class="nav-link-item">Services</a>
               </li>
               <li class="nav-item">
-                <a href="/contact-us.html" target="_blank" class="nav-link-item">Contact Us</a>
+                <a href="/contact-us.html" class="nav-link-item">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -146,7 +161,7 @@
                 <li>Amazon Ads</li>
               </ul>
               </p>
-              <a class="aximo-icon" href="contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+              <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -166,7 +181,7 @@
                 <li>Influencer Marketing</li>
               </ul>
               </p>
-              <a class="aximo-icon" href="contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+              <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -186,7 +201,7 @@
                 <li>Google Tag Manager</li>
               </ul>
               </p>
-              <a class="aximo-icon" href="contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+              <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -206,7 +221,7 @@
                 <li>Prototyping & User Testing</li>
               </ul>
               </p>
-              <a class="aximo-icon" href="contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+              <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -246,27 +261,27 @@
                 <li>Video Editing & Assembly</li>
               </ul>
               </p>
-              <a class="aximo-icon" href="contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+              <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="aximo-iconbox-wrap wow fadeInUpX" data-wow-delay="0.6s">
             <div class="aximo-iconbox-icon">
-              <i class="icon-chef"></i>
+              <i class="icon-design-tools"></i>
             </div>
             <div class="aximo-iconbox-data">
-              <h3>Music Production</h3>
+              <h3>Printing Service</h3>
               <p>
               <ul>
-                <li>Composition & Songwriting</li>
-                <li>Recording & Editing</li>
-                <li>Mixing & Balancing</li>
-                <li>Mastering</li>
-                <li>Sound Design & Sampling</li>
+                <li>Business Cards Printing</li>
+                <li>Tshirts Printing</li>
+                <li>Flyers Printing</li>
+                <li>Menu Printing</li>
+                <li>Pamphlet Printing</li>
               </ul>
               </p>
-              <a class="aximo-icon" href="contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+              <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -279,14 +294,14 @@
               <h3>Graphic Design</h3>
               <p>
               <ul>
-                <li>Logo Design</li>
                 <li>Brand & Identity Design</li>
                 <li>Marketing & Advertising Design</li>
                 <li>Publication & Layout Design</li>
                 <li>Illustrations</li>
+                <li>Logo making / Branding</li>
               </ul>
               </p>
-              <a class="aximo-icon" href="contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
+              <a class="aximo-icon" href="/contact-us.html"><img src="assets/images/icon/arrow-right.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -437,9 +452,9 @@
                 <img src="assets/images/icon/question.svg" alt="">
               </div>
               <div class="aximo-accordion-normal-data">
-                <h3>What is your design process like?</h3>
-                <p>Explaining the design agency's process from initial concept to final delivery helps clients
-                  understand what to expect.</p>
+                <h3>How do you measure impact of user feedback?</h3>
+                <p>We measure the impact of user feedback on our product development by tracking and analyzing the
+                  metrics and KPIs that are relevant to our product goals</p>
               </div>
             </div>
             <div class="aximo-accordion-normal-item">
@@ -539,7 +554,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="https://facebook.com/page/techbucket" target="_blank">
+                    <a href="https://www.facebook.com/techbucket.ca/" target="_blank">
                       <i class="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
@@ -549,7 +564,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.tiktok.com/techbucket" target="_blank">
+                    <a href="https://www.tiktok.com/@techbucket.ca" target="_blank">
                       <i class="fa-brands fa-tiktok"></i>
                     </a>
                   </li>
@@ -589,20 +604,20 @@
           <div class="col-lg-6">
             <div class="aximo-footer-logo">
               <a href="">
-                <img src="assets/images/logo/logo-white.svg" alt="">
+                <img class="footerImage" src="assets/logo_tb.png"" alt="">
               </a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="aximo-copywright one">
-              <p> &copy; Copyright 2024, All Rights Reserved | Tech Bucket</p>
+          <div class=" col-lg-6">
+                <div class="aximo-copywright one">
+                  <p> &copy; Copyright 2024, All Rights Reserved | Tech Bucket</p>
+                </div>
             </div>
           </div>
+
         </div>
 
       </div>
-
-    </div>
   </footer>
 
 

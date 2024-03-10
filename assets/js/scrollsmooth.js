@@ -1,6 +1,3 @@
-
-
-
 // ScrollSmoother.create({
 //   content: ".aximo-smooth-scroll",
 //   smooth: 1

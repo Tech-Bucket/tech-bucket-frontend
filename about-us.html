@@ -7,8 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Bucket | Creative Media Agency</title>
 
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <!--- End favicon-->
 
   <link
@@ -26,10 +31,29 @@
   <link rel="stylesheet" href="assets/css/icomoon.css">
 
 
+  <!-- Custom Cursor -->
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
   <!-- Code Editor  -->
 
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/app.min.css">
+  <style>
+    .footerImage {
+      width: 25%;
+
+      @media (min-width: 200px) and (max-width: 767px) {
+        width: 50%;
+      }
+
+    }
+  </style>
 </head>
 
 <body class="light">
@@ -49,7 +73,7 @@
         <!-- Brand Logo-->
         <div class="brand-logo">
           <a href="index.html">
-            <img src="assets/images/logo/logo-white.svg" alt="" class="light-version-logo">
+            <img src="assets/logo_tb.png" alt="" class="light-version-logo">
           </a>
         </div>
         <div class="menu-block-wrapper">
@@ -67,16 +91,16 @@
                 <a href="/index.html" class="nav-link-item">Home</a>
               </li>
               <li class="nav-item">
-                <a href="portfolio.html" target="_blank" class="nav-link-item">Portfolio</a>
+                <a href="portfolio.html" class="nav-link-item">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a href="/team.html" target="_blank" class="nav-link-item">Our Team</a>
+                <a href="/about-us.html" class="nav-link-item">About Us</a>
               </li>
               <li class="nav-item">
-                <a href="/service.html" target="_blank" class="nav-link-item">Services</a>
+                <a href="/service.html" class="nav-link-item">Services</a>
               </li>
               <li class="nav-item">
-                <a href="/contact-us.html" target="_blank" class="nav-link-item">Contact Us</a>
+                <a href="/contact-us.html" class="nav-link-item">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -145,11 +169,11 @@
         <div class="col-lg-4">
           <div class="aximo-counter-wrap">
             <div class="aximo-counter-data">
-              <h2 class="aximo-counter-number"><span data-percentage="15" class="aximo-counter"></span>+</h2>
+              <h2 class="aximo-counter-number"><span data-percentage="10" class="aximo-counter"></span>+</h2>
               <p>Years of experience</p>
             </div>
             <div class="aximo-counter-data">
-              <h2 class="aximo-counter-number"><span data-percentage="120" class="aximo-counter"></span>k</h2>
+              <h2 class="aximo-counter-number"><span data-percentage="30" class="aximo-counter"></span>k</h2>
               <p>Successful projects</p>
             </div>
             <div class="aximo-counter-data">
@@ -206,19 +230,21 @@
         <div class="row">
           <div class="col-lg-6">
             <h3>Our core vision</h3>
-            <p>Empowering businesses to create impactful and visually stunning brand experiences that captivate
-              audiences and drive success in the digital age. </p>
-            <p>Our team consists of experienced designers, developers. We have a wide variety of skills and backgrounds,
-              allowing us to tackle projects of all sizes and complexities. We believe in the power of imagination and
-              innovation.</p>
+            <p>To be the leading media agency in Canada that delivers innovative and effective solutions for businesses
+              of all sizes and budgets. </p>
+            <p>We envision a world where every business, regardless of its size or industry, can have a powerful online
+              presence that attracts and engages its ideal customers. We want to be the trusted partner of choice for
+              businesses that need help with creating and managing their digital platforms and strategies. We want to be
+              known for our creativity, quality, and results.</p>
           </div>
           <div class="col-lg-6">
             <h3>Our main mission</h3>
-            <p>Our mission is to collaborate with businesses of all sizes, from startups to established brands, to
-              provide innovative and creative design solutions. </p>
-            <p>We are committed to creating designs that inspire, connect & our clients in the marketplace. Our focus is
-              on understanding. Our clients' unique needs and delivery designs that not only meet but exceed their
-              expectations.</p>
+            <p>To help our clients grow their online presence and reach their target audience by providing a range of
+              services, including web design, digital marketing, social media management, content creation, and
+              branding. </p>
+            <p>We are committed to understanding our clients’ needs and goals, and delivering customized solutions that
+              suit their budget and timeline. We are dedicated to providing excellent service and support, and building
+              long-term relationships with our clients</p>
           </div>
         </div>
       </div>
@@ -232,49 +258,49 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="aximo-auto-slider-item">
-            <h3>Let's create new experiences</h3>
+            <h3>Let's create something cool</h3>
             <img src="assets/images/v1/star3.png" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aximo-auto-slider-item">
-            <h3>Let's create new experiences</h3>
+            <h3>Let's create something exciting</h3>
             <img src="assets/images/v1/star3.png" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aximo-auto-slider-item">
-            <h3>Let's create new experiences</h3>
+            <h3>Let's create something creative</h3>
             <img src="assets/images/v1/star3.png" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aximo-auto-slider-item">
-            <h3>Let's create new experiences</h3>
+            <h3>Let's create something extraordinary</h3>
             <img src="assets/images/v1/star3.png" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aximo-auto-slider-item">
-            <h3>Let's create new experiences</h3>
+            <h3>Let's create something amazing</h3>
             <img src="assets/images/v1/star3.png" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aximo-auto-slider-item">
-            <h3>Let's create new experiences</h3>
+            <h3>Let's create something astonishing</h3>
             <img src="assets/images/v1/star3.png" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aximo-auto-slider-item">
-            <h3>Let's create new experiences</h3>
+            <h3>Let's create something fantastic</h3>
             <img src="assets/images/v1/star3.png" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aximo-auto-slider-item">
-            <h3>Let's create new experiences</h3>
+            <h3>Let's create something eyecatching</h3>
             <img src="assets/images/v1/star3.png" alt="">
           </div>
         </div>
@@ -296,49 +322,12 @@
           </span>
         </h2>
       </div>
-      <div class="row">
-        <div class="col-xl-3 col-md-6">
-          <div class="aximo-team-wrap wow fadeInUpX" data-wow-delay="0s">
-            <div class="aximo-team-thumb">
-              <img src="assets/images/team/team1.png" alt="">
-              <div class="aximo-social-icon team-social">
-                <ul>
-                  <li>
-                    <a href="https://twitter.com/" target="_blank">
-                      <i class="icon-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://facebook.com/" target="_blank">
-                      <i class="icon-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="icon-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <i class="icon-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="aximo-team-data">
-              <a href="single-team.html">
-                <h3>Andrew Mark</h3>
-              </a>
-              <p>CEO & Founder</p>
-            </div>
-          </div>
-        </div>
+      <div class="row justify-content-center">
         <div class="col-xl-3 col-md-6">
           <div class="aximo-team-wrap wow fadeInUpX" data-wow-delay="0.1s">
             <div class="aximo-team-thumb">
-              <img src="assets/images/team/team2.png" alt="">
-              <div class="aximo-social-icon team-social">
+              <img src="assets/images/team/team1.png" alt="">
+              <!-- <div class="aximo-social-icon team-social">
                 <ul>
                   <li>
                     <a href="https://twitter.com/" target="_blank">
@@ -361,235 +350,87 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="aximo-team-data">
-              <a href="single-team.html">
-                <h3>Jack Taylor</h3>
+              <a href="single-team.html#shahbaz">
+                <h3>Shahbaz Singh</h3>
               </a>
-              <p>Senior Designer</p>
+              <p>Founder / Operations Manager</p>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-md-6">
           <div class="aximo-team-wrap wow fadeInUpX" data-wow-delay="0.2s">
             <div class="aximo-team-thumb">
-              <img src="assets/images/team/team3.png" alt="">
-              <div class="aximo-social-icon team-social">
+              <img src="assets/images/team/team2.png" alt="">
+              <!-- <div class="aximo-social-icon team-social">
                 <ul>
                   <li>
-                    <a href="https://twitter.com/" target="_blank">
+                    <a href="">
                       <i class="icon-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://facebook.com/" target="_blank">
+                    <a href="">
                       <i class="icon-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="">
                       <i class="icon-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="">
                       <i class="icon-linkedin"></i>
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="aximo-team-data">
-              <a href="single-team.html">
-                <h3>Martine Joy</h3>
+              <a href="single-team.html#gurnoor">
+                <h3>Gurnoor Sapra</h3>
               </a>
-              <p>Project Manager</p>
+              <p>Founder / Business Strategist</p>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-md-6">
           <div class="aximo-team-wrap wow fadeInUpX" data-wow-delay="0.3s">
             <div class="aximo-team-thumb">
-              <img src="assets/images/team/team4.png" alt="">
-              <div class="aximo-social-icon team-social">
+              <img src="assets/images/team/team3.png" alt="">
+              <!-- <div class="aximo-social-icon team-social">
                 <ul>
                   <li>
-                    <a href="https://twitter.com/" target="_blank">
+                    <a href="">
                       <i class="icon-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://facebook.com/" target="_blank">
+                    <a href="">
                       <i class="icon-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="">
                       <i class="icon-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="">
                       <i class="icon-linkedin"></i>
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="aximo-team-data">
-              <a href="single-team.html">
-                <h3>Adam Straw</h3>
+              <a href="single-team.html#rajvir">
+                <h3>Rajvir Bheniwal</h3>
               </a>
-              <p>Web Developer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6">
-          <div class="aximo-team-wrap wow fadeInUpX" data-wow-delay="0.4s">
-            <div class="aximo-team-thumb">
-              <img src="assets/images/team/team5.png" alt="">
-              <div class="aximo-social-icon team-social">
-                <ul>
-                  <li>
-                    <a href="https://twitter.com/" target="_blank">
-                      <i class="icon-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://facebook.com/" target="_blank">
-                      <i class="icon-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="icon-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <i class="icon-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="aximo-team-data">
-              <a href="single-team.html">
-                <h3>William Jack</h3>
-              </a>
-              <p>Creative Director</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6">
-          <div class="aximo-team-wrap wow fadeInUpX" data-wow-delay="0.5s">
-            <div class="aximo-team-thumb">
-              <img src="assets/images/team/team6.png" alt="">
-              <div class="aximo-social-icon team-social">
-                <ul>
-                  <li>
-                    <a href="https://twitter.com/" target="_blank">
-                      <i class="icon-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://facebook.com/" target="_blank">
-                      <i class="icon-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="icon-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <i class="icon-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="aximo-team-data">
-              <a href="single-team.html">
-                <h3>Alex Tom</h3>
-              </a>
-              <p>UI/UX Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6">
-          <div class="aximo-team-wrap wow fadeInUpX" data-wow-delay="0.6s">
-            <div class="aximo-team-thumb">
-              <img src="assets/images/team/team7.png" alt="">
-              <div class="aximo-social-icon team-social">
-                <ul>
-                  <li>
-                    <a href="https://twitter.com/" target="_blank">
-                      <i class="icon-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://facebook.com/" target="_blank">
-                      <i class="icon-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="icon-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <i class="icon-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="aximo-team-data">
-              <a href="single-team.html">
-                <h3>Robin Lesser</h3>
-              </a>
-              <p>Chief Executive Officer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6">
-          <div class="aximo-team-wrap wow fadeInUpX" data-wow-delay="0.7s">
-            <div class="aximo-team-thumb">
-              <img src="assets/images/team/team8.png" alt="">
-              <div class="aximo-social-icon team-social">
-                <ul>
-                  <li>
-                    <a href="https://twitter.com/" target="_blank">
-                      <i class="icon-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://facebook.com/" target="_blank">
-                      <i class="icon-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="icon-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <i class="icon-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="aximo-team-data">
-              <a href="single-team.html">
-                <h3>Sheikh David</h3>
-              </a>
-              <p>HR Director</p>
+              <p>Task Manager</p>
             </div>
           </div>
         </div>
@@ -617,42 +458,42 @@
                 </span>
                 project together
               </h2>
-              <p>We work closely with our clients to understand their objectives, target audience, and unique needs. We
-                use our creative skills to translate these requirements and practical design solutions.</p>
+              <p>Data whisperers & design ninjas combined. We unlock your brand's story & build experiences that
+                captivate. #TechBucket</p>
               <div class="aximo-info-wrap">
                 <div class="aximo-info">
                   <ul>
                     <li>Give us a call:</li>
-                    <li><a href="">(123) 456-7890</a></li>
+                    <li><a href="">289-221-0474</a></li>
                   </ul>
                 </div>
                 <div class="aximo-info">
                   <ul>
                     <li>Send us an email:</li>
-                    <li><a href="">info@mthemeus.com</a></li>
+                    <li><a href="">info@techbucket.ca</a></li>
                   </ul>
                 </div>
               </div>
               <div class="aximo-social-icon social-large">
                 <ul>
                   <li>
-                    <a href="https://twitter.com/" target="_blank">
-                      <i class="icon-twitter"></i>
+                    <a href="mailto:info@techbucket.ca" target="_blank">
+                      <i class="fa-solid fa-envelope"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://facebook.com/" target="_blank">
-                      <i class="icon-facebook"></i>
+                    <a href="https://www.facebook.com/techbucket.ca/" target="_blank">
+                      <i class="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="icon-instagram"></i>
+                    <a href="https://www.instagram.com/techbucket.ca" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                      <i class="icon-linkedin"></i>
+                    <a href="https://www.tiktok.com/@techbucket.ca" target="_blank">
+                      <i class="fa-brands fa-tiktok"></i>
                     </a>
                   </li>
                 </ul>
@@ -665,18 +506,19 @@
           <div class="col-lg-5">
             <div class="aximo-form-wrap">
               <h4>Send us a message</h4>
-              <form action="#">
+              <form onSubmit="return validateAndSubmitForm(event)">
                 <div class="aximo-form-field">
-                  <input type="text" placeholder="Your name">
+                  <input value='' id='name' type="text" placeholder="Your name">
                 </div>
                 <div class="aximo-form-field">
-                  <input type="email" placeholder="Your email address">
+                  <input value='' id='email' type="email" placeholder="Your email address">
                 </div>
                 <div class="aximo-form-field">
-                  <input type="text" placeholder="+088-234-6849">
+                  <input value='' id="phone" type="text" placeholder="+088-234-6849">
+                  <input type='hidden' value='General Contact Purpose' id="category" type="text" placeholder="">
                 </div>
                 <div class="aximo-form-field">
-                  <textarea name="textarea" placeholder="Write your message here..."></textarea>
+                  <textarea value='' id='message' name="textarea" placeholder="Write your message here..."></textarea>
                 </div>
                 <button id="aximo-submit-btn" type="submit">Send message <span><img
                       src="assets/images/icon/arrow-right3.svg" alt=""></span></button>
@@ -690,20 +532,20 @@
           <div class="col-lg-6">
             <div class="aximo-footer-logo">
               <a href="">
-                <img src="assets/images/logo/logo-white.svg" alt="">
+                <img class="footerImage" src="assets/logo_tb.png"" alt="">
               </a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="aximo-copywright one">
-              <p> &copy; Copyright 2023, All Rights Reserved by Mthemeus</p>
+          <div class=" col-lg-6">
+                <div class="aximo-copywright one">
+                  <p> &copy; Copyright 2024, All Rights Reserved | Tech Bucket</p>
+                </div>
             </div>
           </div>
+
         </div>
 
       </div>
-
-    </div>
   </footer>
 
 
@@ -728,8 +570,18 @@
   <!-- <script src="assets/js/scrollsmooth.js"></script> -->
   <script src="assets/js/faq.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
+  <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/contact.js"></script>
+
+  <script>
+    new kursor({
+      type: 4
+    })
+  </script>
 
 
 </body>
